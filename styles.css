@@ -587,3 +587,156 @@ body {
     bottom: 0;
     width: 100%;
 }
+.purchase-container {
+    padding: 60px 20px;
+}
+
+.purchase {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-summary {
+    margin-bottom: 20px;
+}
+
+.size-selection {
+    margin-bottom: 20px;
+}
+
+.size-selection label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.size-selection select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method legend {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.payment-method label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: none; 
+}
+
+.payment-details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.payment-details label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.payment-details input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.purchase-container {
+    padding: 60px 20px;
+}
+
+.purchase {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-summary {
+    margin-bottom: 20px;
+}
+
+.size-selection,
+.address-section,
+.payment-method,
+.payment-details {
+    margin-bottom: 20px;
+}
+
+.size-selection label,
+.address-section label,
+.payment-method legend,
+.payment-details h2,
+.payment-details label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.size-selection select,
+.address-section input,
+.payment-details input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+.payment-method label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: none; 
+}
+
+.payment-details input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+

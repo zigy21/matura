@@ -29,7 +29,34 @@
                     <p>Količina: 1</p>
                     <p>Cena: €344,95 EUR</p>
                 </div>
+                <div class="size-selection">
+                    <label for="size">Izberi svojo velikost (EU):</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Izberi svojo velikost</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                    </select>
+                </div>
+                <div class="address-section">
+                    <label for="address">Naslov:</label>
+                    <input type="text" id="address" name="address" placeholder="Vnesite vaš naslov" required>
 
+                    <label for="city">Mesto:</label>
+                    <input type="text" id="city" name="city" placeholder="Vnesite vaše mesto" required>
+
+                    <label for="st">Poštna številka:</label>
+                    <input type="text" id="st" name="st" placeholder="Vnesite poštno številko" required>
+
+                    <label for="phone">Telefonska številka:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Vnesite številko" required>
+                </div>
                 <fieldset class="payment-method">
                     <legend>Izberite način plačila:</legend>
                     <label>

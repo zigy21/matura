@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodajalnica čevljev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Prodajalnica čevljev</div>
+        <nav>
+            <a href="home.html">Domov</a>
+            <a href="main.html">Izdelki</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+
+    <main class="purchase-container">
+        <section class="purchase">
+            <h1>Dokončajte svoj nakup</h1>
+            <form action="confirm-purchase.php" method="post" class="purchase-form">
+                <div class="product-summary">
+                    <h2>Povzetek izdelka</h2>
+                    <p><strong>Adidas Yeezy Boost 350 V2 'Core Black White' (2022)</strong></p>
+                    <p>Količina: 1</p>
+                    <p>Cena: €708,95 EUR</p>
+                </div>
+
+                <fieldset class="payment-method">
+                    <legend>Izberite način plačila:</legend>
+                    <label>
+                        <input type="radio" name="payment-method" value="card" checked>
+                        Kreditna/debetna kartica
+                    </label>
+                    <label>
+                        <input type="radio" name="payment-method" value="cash">
+                        Gotovina ob dostavi
+                    </label>
+                </fieldset>
+
+                <div id="card-details" class="payment-details">
+                    <h2>Podrobnosti kartice</h2>
+                    <label for="card-number">Številka kartice:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+                    <label for="card-expiry">Datum poteka:</label>
+                    <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY" required>
+
+                    <label for="card-cvc">CVC:</label>
+                    <input type="text" id="card-cvc" name="card-cvc" placeholder="123" required>
+                </div>
+
+                
+            </form>
+            <a href="thank_you.html"><button type="submit" class="cta-button">Potrdite nakup</button></a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Žiga Vrhovec. Vse pravice pridržane.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('input[name="payment-method"]').forEach((elem) => {
+            elem.addEventListener("change", function() {
+                document.getElementById("card-details").style.display = this.value === "card" ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

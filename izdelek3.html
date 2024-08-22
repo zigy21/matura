@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodajalnica čevljev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Prodajalnica čevljev</div>
+        <nav>
+            <a href="home.html">Domov</a>
+            <a href="main.html" class="active">Izdelki</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main class="product-detail-container">
+        <section class="product-detail">
+            <div class="product-image">
+                <img src="slike/cevlji3.webp" alt="Shoes">
+            </div>
+            <div class="product-info">
+                <h1>Yeezy Boost 350 V2 'Slate' (2022)</h1>
+                <p>"Nevtralni odtenki, vsestranski videz, popolno za vsakodnevno nošenje."</p>
+                <div class="price">€386,95 EUR</div>
+                <form action="purchase.php" method="post" class="purchase-form">
+                    <label for="quantity">Količina:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                </form>
+                <a href="kupi_izdelek3.html"><button class="cta-button">Kupi zdaj</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Žiga Vrhovec. Vse pravice pridržane.</p>
+    </footer>
+</body>
+
+</html>
